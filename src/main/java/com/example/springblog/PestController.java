@@ -16,8 +16,8 @@ public class PestController {
 
     @GetMapping("/posts/{id}")
     @ResponseBody
-    public int postsId(@PathVariable int id){
-        return (id);
+    public String postsId(@PathVariable long id){
+        return ("Viewing individual post with the id of " +id);
     }
 
     @GetMapping("/posts/create")
